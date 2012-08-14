@@ -1,6 +1,14 @@
 *.class
 
+# IDE #
+.idea
+*.iml
+*.ipr
+*.iws
+
 # Package Files #
 *.jar
 *.war
 *.ear
+
+target/
