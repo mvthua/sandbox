@@ -1,7 +1,7 @@
 /**
  * WebConfig.java
  */
-package x.y.z.web;
+package x.y.z.web.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

@@ -15,7 +15,7 @@
   <!-- Location of Java @Configuration classes that configure the components that makeup this application -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>x.y.z.web.WebConfig</param-value>
+    <param-value>x.y.z.config.AppConfig</param-value>
   </context-param>
 
   <!-- Specifies the default mode of this application, to be activated if no other profile (or mode) is specified -->
