@@ -13,8 +13,9 @@ import org.springframework.context.annotation.ImportResource;
  * @author Michael
  */
 @Configuration
-@Import(WebConfig.class)
-//@ImportResource("classpath:/logging-ctx.xml")
+@Import({ WebConfig.class })
+//@Import({ LoggingConfig.class, WebConfig.class })
+@ImportResource({ "classpath:/logging-ctx.xml" })
 public class AppConfig {
 
 }
