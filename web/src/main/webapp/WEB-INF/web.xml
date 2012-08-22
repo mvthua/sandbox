@@ -7,15 +7,19 @@
   <display-name>sandbox</display-name>
 
   <!-- Java-based annotation-driven Spring container definition -->
-  <context-param>
+<!--  <context-param>
     <param-name>contextClass</param-name>
     <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
-  </context-param>
+  </context-param>-->
 
   <!-- Location of Java @Configuration classes that configure the components that makeup this application -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>x.y.z.config.AppConfig</param-value>
+    <param-value>
+      classpath:/ctx.xml
+      classpath:/logging-ctx.xml
+    </param-value>
+<!--    <param-value>x.y.z.config.AppConfig</param-value>-->
   </context-param>
 
   <!-- Specifies the default mode of this application, to be activated if no other profile (or mode) is specified -->
@@ -54,14 +58,14 @@
   <servlet>
     <servlet-name>dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <init-param>
+<!--    <init-param>
       <param-name>contextClass</param-name>
       <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
     </init-param>
     <init-param>
       <param-name>contextConfigLocation</param-name>
       <param-value>x.y.z.web.WebConfig</param-value>
-    </init-param>
+    </init-param>-->
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>

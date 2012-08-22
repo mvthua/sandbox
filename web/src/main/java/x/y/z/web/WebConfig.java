@@ -15,13 +15,15 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import x.y.z.web.config.LoggingConfig;
+
 /**
  * @author Michael
  */
 @ComponentScan(basePackages = { "x.y.z.web.controller" })
 @Configuration
 @EnableWebMvc
-//@Import(DataConfig.class)
+//@Import(LoggingConfig.class)
 //@ImportResource("classpath:/logging-ctx.xml")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
